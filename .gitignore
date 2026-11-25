@@ -3,3 +3,6 @@ fuentes.txt
 *.class
 .idea/
 *.iml
+
+# copias de seguridad que genera el juego
+*.bak
