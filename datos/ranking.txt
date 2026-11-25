@@ -1,0 +1,8 @@
+# nombre;puntaje;entregas;fecha(AAAA-MM-DD)
+Lucia;2350;14;2026-11-25
+Tomas;1890;11;2026-11-24
+Camila;1420;9;2026-11-23
+Valentino;632;4;2026-11-25
+Valentino;36;2;2026-11-25
+Valentino;-350;0;2026-11-25
+Valentino;-400;0;2026-11-25

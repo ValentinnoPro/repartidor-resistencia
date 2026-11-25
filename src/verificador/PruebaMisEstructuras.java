@@ -1,19 +1,21 @@
 package verificador;
 
+import estructuras.ColaEnlazada;
+import estructuras.ListaEnlazada;
+import estructuras.PilaEnlazada;
+
 public class PruebaMisEstructuras {
 
     // Punto de entrada
     public static void main(String[] args) {
 
-        // Lista: descomentar y reemplazar por su clase
-        // VerificadorEstructuras.verificarLista(new MiLista<Integer>());
+        // Lista
+        VerificadorEstructuras.verificarLista(new ListaEnlazada<Integer>());
 
-        // Pila: descomentar y reemplazar por su clase
-        // VerificadorEstructuras.verificarPila(new MiPila<Integer>());
+        // Pila
+        VerificadorEstructuras.verificarPila(new PilaEnlazada<Integer>());
 
-        // Cola: descomentar y reemplazar por su clase
-        // VerificadorEstructuras.verificarCola(new MiCola<Integer>());
-
-        System.out.println("Editen PruebaMisEstructuras para verificar sus estructuras.");
+        // Cola
+        VerificadorEstructuras.verificarCola(new ColaEnlazada<Integer>());
     }
 }

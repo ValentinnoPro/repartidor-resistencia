@@ -1,0 +1,243 @@
+# Corpus para los modelos de Markov (sin tildes para mantener el modelo chico)
+[NOMBRES]
+Lucia Benitez
+Mateo Gonzalez
+Camila Alvarez
+Joaquin Vargas
+Valentina Cabrera
+Tomas Escobar
+Sofia Insaurralde
+Martin Lezcano
+Agustina Coronel
+Nicolas Fernandez
+Julieta Sanchez
+Facundo Herrera
+Milagros Suarez
+Bruno Britez
+Florencia Sosa
+Santiago Ibarra
+Micaela Ferreyra
+Lautaro Acosta
+Rocio Rodriguez
+Franco Torres
+Abril Ortiz
+Ignacio Ayala
+Candela Barrios
+Thiago Zalazar
+Brenda Rios
+Emanuel Esquivel
+Aldana Duarte
+Gonzalo Perez
+Daniela Medina
+Ramiro Aguirre
+Antonella Gimenez
+Leandro Nunez
+Carolina Quiroga
+Maximiliano Galarza
+Paula Romero
+Federico Lopez
+Noelia Ramirez
+Sebastian Rojas
+Mariana Villalba
+Alejandro Franco
+Celeste Centurion
+Ezequiel Cardozo
+Romina Gomez
+Gabriel Ledesma
+Pamela Diaz
+Diego Castro
+Natalia Ojeda
+Cristian Vera
+Yamila Peralta
+Lucas Godoy
+Eliana Monzon
+Pablo Silva
+Gisela Martinez
+Marcos Flores
+Karina Molina
+Ivan Maidana
+Lucia Peralta
+Mateo Godoy
+Camila Monzon
+Joaquin Silva
+Valentina Martinez
+Tomas Flores
+Sofia Molina
+Martin Maidana
+Agustina Paredes
+Nicolas Mendoza
+Julieta Bogado
+Facundo Benitez
+Milagros Gonzalez
+Bruno Alvarez
+Florencia Vargas
+Santiago Cabrera
+Micaela Escobar
+Lautaro Insaurralde
+Rocio Lezcano
+Franco Coronel
+Abril Fernandez
+Ignacio Sanchez
+Candela Herrera
+Thiago Suarez
+Brenda Britez
+Emanuel Sosa
+Aldana Ibarra
+Gonzalo Ferreyra
+Daniela Acosta
+Ramiro Rodriguez
+Antonella Torres
+Leandro Ortiz
+Carolina Ayala
+Maximiliano Barrios
+Paula Zalazar
+Federico Rios
+Noelia Esquivel
+Sebastian Duarte
+Mariana Perez
+Alejandro Medina
+Celeste Aguirre
+Ezequiel Gimenez
+Romina Nunez
+Gabriel Quiroga
+Pamela Galarza
+Diego Romero
+Natalia Lopez
+Cristian Ramirez
+Yamila Rojas
+Lucas Villalba
+Eliana Franco
+Pablo Centurion
+Gisela Cardozo
+Marcos Gomez
+Karina Ledesma
+Ivan Diaz
+Lucia Rojas
+Mateo Villalba
+Camila Franco
+Joaquin Centurion
+Valentina Cardozo
+Tomas Gomez
+Sofia Ledesma
+Martin Diaz
+Agustina Castro
+Nicolas Ojeda
+Julieta Vera
+Facundo Peralta
+Milagros Godoy
+Bruno Monzon
+Florencia Silva
+Santiago Martinez
+Micaela Flores
+Lautaro Molina
+Rocio Maidana
+Franco Paredes
+Abril Mendoza
+Ignacio Bogado
+Candela Benitez
+Thiago Gonzalez
+Brenda Alvarez
+Emanuel Vargas
+Aldana Cabrera
+Gonzalo Escobar
+Daniela Insaurralde
+Ramiro Lezcano
+Antonella Coronel
+Leandro Fernandez
+Carolina Sanchez
+Maximiliano Herrera
+Paula Suarez
+Federico Britez
+Noelia Sosa
+Sebastian Ibarra
+Mariana Ferreyra
+Alejandro Acosta
+Celeste Rodriguez
+Ezequiel Torres
+Romina Ortiz
+Gabriel Ayala
+Pamela Barrios
+Diego Zalazar
+Natalia Rios
+Cristian Esquivel
+Yamila Duarte
+Lucas Perez
+Eliana Medina
+Pablo Aguirre
+Gisela Gimenez
+Marcos Nunez
+Karina Quiroga
+Ivan Galarza
+Lucia Duarte
+Mateo Perez
+Camila Medina
+Joaquin Aguirre
+Valentina Gimenez
+Tomas Nunez
+Sofia Quiroga
+Martin Galarza
+Agustina Romero
+Nicolas Lopez
+Julieta Ramirez
+Facundo Rojas
+
+[RECLAMOS]
+Donde esta mi empanada
+Llego frio el pedido
+Tardaron una eternidad en traerlo
+Yo pedi sin cebolla
+Falta una gaseosa en la bolsa
+Quiero hablar con el gerente
+Esto no es lo que pedi
+El repartidor se perdio otra vez
+Pague de mas y llego tarde
+Mi milanesa llego aplastada
+Pedi tres y trajeron dos
+Ya me levante de la mesa esperando
+Que desastre de servicio
+Nunca mas les compro
+Se me enfrio la pizza en el camino
+El helado llego hecho sopa
+Me trajeron el pedido de otro vecino
+Dejaron todo en la puerta equivocada
+Esperaba mi cena hace una hora
+La bolsa llego toda mojada
+No me avisaron que no habia stock
+Quiero que me devuelvan la plata
+Tengo una reunion y no llega el almuerzo
+Mis hijos tienen hambre y todavia nada
+Llego sin los cubiertos
+El tuco se derramo en la caja
+Me cobraron el envio dos veces
+Que lento que anda el cadete
+La hamburguesa vino sin queso
+Pedi picante y vino dulce
+Estoy esperando desde las ocho
+Me dijeron veinte minutos y ya pasaron cuarenta
+El pedido llego incompleto
+Vengo reclamando hace dias
+Mi sandwich llego desarmado
+Voy a dejar una mala resena
+Cuanto mas tengo que esperar
+Esto es una falta de respeto
+Me equivocaron la direccion de entrega
+Que alguien me explique donde esta mi comida
+Con esta lluvia y todavia no llega
+
+[RADIO]
+Atencion: lluvia fuerte sobre el centro de la ciudad
+Transito lento sobre la avenida 9 de Julio
+Hoy se juega el clasico del barrio y las calles estan llenas
+Cuidado con las calles anegadas despues de la tormenta
+Radio Resistencia, la ciudad de las esculturas, siempre con vos
+Los cadetes pedalean mas rapido cuando suena la cumbia
+Se recomienda circular con precaucion por Sarmiento
+Corte parcial de calle por trabajos en la red de agua
+Temperatura agradable y viento norte en toda la capital chaquena
+Los mejores chipas de la ciudad se hacen en el barrio
+La Plaza 25 de Mayo recibe a los vecinos con musica en vivo
+Llego el calor al Chaco y se agotan los helados
+Hoy el sol pega fuerte, no olviden hidratarse
+Atencion cadetes: respeten los semaforos y las manos de las calles
+Nuevo record de entregas en el microcentro
+Pronostico: tormenta de la tarde y mucho calor

@@ -1,0 +1,15 @@
+# nombre;costo;factorVelocidad;comprada  (pre-orden, # = vacío)
+@dinero;379
+Base;0;1.0;true
+Motor;200;0.9;false
+Turbo;500;0.8;false
+#
+#
+Frenos;300;0.85;false
+#
+#
+Mochila;150;0.95;false
+Amortiguadores;250;0.9;false
+#
+#
+#
