@@ -82,40 +82,50 @@ public class DibujoArbol {
     }
 
     public void dibujar(Graphics2D g, Taller taller, double centroX, double arriba, double separacion, double bajada) {
+        dibujar(g, taller, centroX, arriba, separacion, bajada, null, 0);
+    }
+
+    /** Igual que el anterior, pero resalta la mejora bajo el mouse y anima las que se pueden comprar. */
+    public void dibujar(Graphics2D g, Taller taller, double centroX, double arriba, double separacion, double bajada,
+                        Mejora resaltada, double tiempo) {
         Lista<Marco> marcos = disponer(taller, centroX, arriba, separacion, bajada);
-        g.setStroke(new BasicStroke(2f));
-        // Primero las líneas, para que las cajas las tapen
-        g.setColor(new Color(110, 120, 150));
+        g.setStroke(new BasicStroke(3f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
+        // Primero las líneas, para que las cajas las tapen: verdes si la rama ya está desbloqueada
         for (int i = 0; i < marcos.tamanio(); i++) {
             Marco m = marcos.obtener(i);
             if (m.tienePadre) {
+                g.setColor(m.mejora.isComprada() ? new Color(80, 190, 130) : new Color(80, 92, 128));
                 g.drawLine((int) m.padreX, (int) m.padreY + ALTO_CAJA / 2, (int) m.x, (int) m.y - ALTO_CAJA / 2);
             }
         }
         for (int i = 0; i < marcos.tamanio(); i++) {
             Marco m = marcos.obtener(i);
             Mejora mejora = m.mejora;
-            Color relleno;
-            Color borde;
+            boolean disponible = !mejora.isComprada() && taller.puedeComprar(mejora);
+            boolean alcanza = disponible && taller.getDinero() >= mejora.getCosto();
+            boolean encima = mejora.equals(resaltada);
+            Color acento;
             if (mejora.isComprada()) {
-                relleno = new Color(40, 100, 70);
-                borde = new Color(110, 220, 150);
-            } else if (taller.puedeComprar(mejora)) {
-                relleno = new Color(80, 70, 30);
-                borde = new Color(250, 210, 80);
+                acento = Estilo.VERDE;
+            } else if (disponible) {
+                acento = alcanza ? Estilo.DORADO : Estilo.NARANJA;
             } else {
-                relleno = new Color(40, 44, 60);
-                borde = new Color(100, 108, 135);
+                acento = new Color(100, 108, 140);
             }
             int x = (int) m.x - ANCHO_CAJA / 2;
-            int y = (int) m.y - ALTO_CAJA / 2;
-            g.setColor(relleno);
-            g.fillRoundRect(x, y, ANCHO_CAJA, ALTO_CAJA, 12, 12);
-            g.setColor(borde);
-            g.drawRoundRect(x, y, ANCHO_CAJA, ALTO_CAJA, 12, 12);
-            Texto.centrado(g, mejora.getNombre(), m.x, m.y - 6, 14, Color.WHITE);
-            String detalle = mejora.isComprada() ? "comprada" : "$" + mejora.getCosto() + "  x" + mejora.getFactorVelocidad();
-            Texto.centrado(g, detalle, m.x, m.y + 14, 12, new Color(200, 205, 225));
+            int y = (int) m.y - ALTO_CAJA / 2 - (encima && disponible ? 3 : 0);
+            if (alcanza) {
+                g.setColor(Estilo.alfa(acento, (int) (40 + 50 * Estilo.pulso(tiempo, 0.9))));
+                g.fillRoundRect(x - 6, y - 6, ANCHO_CAJA + 12, ALTO_CAJA + 12, 22, 22);
+            }
+            Color relleno = mejora.isComprada() ? new Color(30, 78, 60) : disponible ? new Color(58, 52, 32) : new Color(30, 36, 54);
+            if (encima) {
+                relleno = Estilo.mezclar(relleno, Color.WHITE, 0.12);
+            }
+            Estilo.panel(g, x, y, ANCHO_CAJA, ALTO_CAJA, 14, relleno, acento);
+            Texto.centrado(g, mejora.getNombre(), m.x, y + 22, 15, Estilo.TEXTO);
+            String detalle = mejora.isComprada() ? "COMPRADA" : "$" + mejora.getCosto() + "  ·  x" + mejora.getFactorVelocidad();
+            Texto.centrado(g, detalle, m.x, y + 40, 12, mejora.isComprada() ? Estilo.VERDE : new Color(205, 212, 235));
         }
     }
 
